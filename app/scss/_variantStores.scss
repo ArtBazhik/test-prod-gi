@@ -1,0 +1,176 @@
+.menu-list-stores {
+    &__title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    &__radio-buttons {
+        .radio-item {
+            margin-bottom: 15px;
+
+            input {
+                display: none;
+            }
+
+            label {
+                display: inline-block;
+                cursor: pointer;
+                position: relative;
+                padding-left: 25px;
+                margin-right: 0;
+                line-height: 18px;
+
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    left: 0;
+                    top: -2px;
+                    border-radius: 50%;
+                    background: #FFFFFF;
+                    border: 2px solid #00A84F;
+                    transition: border .2s ease-in;
+                }
+            }
+        }
+    }
+
+}
+
+.list-store__block {
+    position: relative;
+    margin-bottom: 20px;
+
+    &-title {
+        width: 280px;
+        padding: 15px;
+        border: 1px solid #E3E3E3;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 14px;
+            height: 14px;
+            background-image: url('../images/select-arrow.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: rotate(180deg);
+            filter: grayscale(1);
+            right: 20%;
+        }
+    }
+
+    &-element {
+        width: 280px;
+        margin-top: -2px;
+        display: none;
+        border: 1px solid #E3E3E3;
+
+        ul {
+            height: 240px;
+            overflow: auto;
+
+            &::-webkit-scrollbar {
+                width: 5px;
+                background-color: #E3E3E3;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                width: 5px;
+                background-color: gray;
+                border-radius: 7px;
+            }
+        }
+
+        .block-element__item {
+            position: relative;
+            padding-left: 15px;
+            margin: 15px 0;
+
+            label {
+                position: relative;
+                padding-left: 30px;
+                cursor: pointer;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 18px;
+                    height: 18px;
+                    border: 3px;
+                    top: -3px;
+                    left: 0;
+                    border: 1px solid #E3E3E3;
+                    border-radius: 3px;
+                }
+            }
+
+            input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 0;
+                opacity: 0;
+
+                &:checked+label::after {
+                    background-color: #00A84F;
+                    background-image: url('../images/arrow-stores-list.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    border: 1px solid #00A84F;
+                }
+            }
+
+            &-search {
+                position: relative;
+                border-bottom: 1px solid #E3E3E3;
+                width: 100%;
+                padding: 15px 10px;
+
+                input {
+                    padding-left: 30px;
+                }
+
+                label {
+                    position: absolute;
+                    background-image: url('../images/search-icon.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    left: 15px;
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+}
+
+.content__menu-list-stores .is-active {
+    .list-store__block-element {
+        display: block;
+    }
+
+    .list-store__block-title {
+        &::before {
+            content: '';
+            transform: rotate(0);
+            filter: none;
+        }
+    }
+}
+
+
+.radio-item input[type=radio]:checked+label::before {
+    border: 5px solid #00A84F;
+}
+
+.menu-list-item {
+    margin-bottom: 30px;
+}

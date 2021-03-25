@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <title>GreenStore</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <!-- Блок шапки сайта -->
+    <header class="header">
+      <div style="border-bottom: 1px solid #e5e5e5;">
+        <div class="container-header">
+          <nav class="header__navigate">
+              <ul class="header__navigate-list">
+              <li class="header__navigate-items nav-link-catalog">  
+                <a href="#">Каталог</a>
+              </li>
+              <li class="header__navigate-items nav-link-orders">
+                <a href="#">Заказы</a>
+              </li>
+              <li class="header__navigate-items nav-link-delivery">
+                <a href="#">Доставки</a>
+              </li>
+              <li class="header__navigate-items nav-internal-orders">
+                <a href="#">Внутренние заказы</a>
+              </li>
+              <li class="header__navigate-items nav-link-moving">
+                <a href="#">Перемещения</a>
+              </li>
+              <li class="header__navigate-items nav-link-realizaion">
+                <a href="#">Реализации</a>
+              </li>
+              <li class="header__navigate-items nav-link-return">
+                <a href="#">Возвраты</a>
+              </li>
+              <li class="header__navigate-items nav-link-user">
+                <a href="#">Иванов И.И.</a>
+              </li>
+              <li class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class='container'>
+        <div class="header__search-block">
+          <div class="search-block__logos">
+            <div class="search-block__logos-item">
+              <img src="./images/logo_gs.svg" alt="Logo-1" />
+            </div>
+            <div class="search-block__logos-item">
+              <img src="./images/logo_zo.svg" alt="Logo-2" />
+            </div>
+            <div class="search-block__logos-item logo-item-ant">
+              <img src="./images/logo_td.svg" alt="Logo-company-1" />
+            </div>
+            <div class="search-block__logos-item logo-item-text">
+              <img src="./images/logo_gs_text.svg" alt="Logo-company-2" />
+            </div>
+          </div>
+          <div class="search-block__input">
+            <input type="text" placeholder="Искачть в GreenStore" />
+            <i class='search-block__input-icon'></i>
+          </div>
+          <div class="search-block__cart">
+            <div class="search-block__cart-icon">
+              <img src="./images/cart.svg" alt="Cart-icon" />
+              <span>180</span>
+            </div>
+            <div class="search-block__cart-price">
+              <p>6 500 000 &#8381</p>
+              <span>10 дней</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__categories">
+        <div class="container-header">
+        <ul class='header__categories-list'>
+          <li class="header__categories-link-item"><a href="#">Кухня</a></li>
+          <li class="header__categories-link-item"><a href="#">Столовая</a></li>
+          <li class='header__categories-link-item'><a href="#">Бытовая химия</a></li>
+          <li class='header__categories-link-item'><a href="#">Хранение/Порядок</a></li>
+          <li class='header__categories-link-item'><a href="#">Стиль жизни</a></li>
+          <li class="header__categories-link-item"><a href="#">Спальная</a></li>
+          <li class='header__categories-link-item'><a href="#">Ванная</a></li>
+          <li class='header__categories-link-item'><a href="#">Красота/Здоровье</a></li>
+          <li class='header__categories-link-item'><a href="#">Сезон</a></li>
+          <li class='header__categories-link-item'><a href="#">Инструменты</a></li>
+          <li class='header__categories-link-item'><a href="#">Отделка</a></li>
+          <li class='header__categories-link-item'><a href="#">Сантехника</a></li>
+          <li class='header__categories-link-item'><a href="#">Электротовары</a></li>
+          <li class='header__categories-link-item'><a href="#">Стройка и столярка</a></li>
+        </ul>
+      </div>
+      </div>
+    </header>
+
+    <!-- Блок с катигориями и фильтрами -->
+    <section class="catalog-listing">
+      <div class="container">
+        <ul class="catalog-listing__list">
+            <li class="catalog-listing__list-item"><a href="#">Наборы кастрюль</a></li>
+            <li class="catalog-listing__list-item"><a href="#">Кастрюли эмалированые</a></li>
+            <li class="catalog-listing__list-item"><a href="#">Кастрюли алюминивые</a></li>
+            <li class="catalog-listing__list-item">
+              <a href="#">Кастрюли из литого алюминия с а/п покрытием</a>
+            </li>
+            <li class="catalog-listing__list-item"><a href="#">Кастрюли из штампованного алюминия</a></li>
+            <li class="catalog-listing__list-item"><a href="#">Кастрюли керамические</a></li>
+            <li class="catalog-listing__list-item"><a href="#">Кастрюли стеклянные</a></li>
+            <li class="catalog-listing__list-item"><a href="#">Пароварки/фондю/молоковарки</a></li>
+            <li class="catalog-listing__list-item"><a href="#">Кастрюли из нержавеющей стали</a></li>
+        </ul>
+				
+        <div class="catalog-listing__filter">
+				
+					<div class="catalog-listing__filter-group">
+						<div class="catalog-filter__wrapper">
+							<p class="catalog-filter__name">
+								Максимальная цена
+							</p>
+							<div class="catalog-filter__price-wrapper">
+								<input type="text" class="catalog-filter__price-input" value="2">
+							</div>
+							<div class="catalog-filter__range">
+								<input type="range" min="1" max="10" step="1" value="2" />
+							</div>
+						</div>
+
+						<div class="catalog-filter__wrapper">
+							<p class="catalog-filter__name">
+								Минимальный остаток
+							</p>
+							<div class="catalog-filter__price-wrapper">
+								<input type="text" class="catalog-filter__price-input" value="2">
+							</div>
+							<div class="catalog-filter__range">
+								<input type="range" min="1" max="10" step="1" value="2" />
+							</div>
+						</div>
+
+						<div class="catalog-filter__wrapper">
+							<p class="catalog-filter__name">
+								Срок доставки дней
+							</p>
+							<div class="catalog-filter__price-wrapper">
+								<input type="text" class="catalog-filter__price-input" value="2">
+							</div>
+							<div class="catalog-filter__range">
+								<input type="range" min="1" max="10" step="1" value="2" />
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog-listing__select-wrapper">
+						<div class="select__header">
+							<span class="select__current">
+								Сначала популярные
+							</span>
+							<span class="select__icon">
+							<svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.01765 0.464584C6.21782 0.464159 6.41181 0.53987 6.56594 0.678575L11.7061 5.33055C11.8811 5.48847 11.9911 5.71541 12.012 5.96143C12.0329 6.20745 11.9629 6.45241 11.8175 6.64241C11.6721 6.83241 11.4631 6.9519 11.2366 6.97458C11.0101 6.99726 10.7845 6.92128 10.6096 6.76336L6.01765 2.59519L1.42573 6.6145C1.3381 6.69178 1.23727 6.74949 1.12904 6.78432C1.0208 6.81915 0.907297 6.8304 0.795045 6.81743C0.682793 6.80446 0.574006 6.76753 0.47494 6.70875C0.375875 6.64997 0.288481 6.57051 0.217784 6.47494C0.139327 6.37927 0.0799075 6.26704 0.0432473 6.14528C0.00658616 6.02351 -0.00652304 5.89484 0.00473605 5.76732C0.0159961 5.63979 0.0513831 5.51617 0.108682 5.40419C0.16598 5.29221 0.243957 5.19429 0.337723 5.11656L5.47793 0.622752C5.63649 0.505972 5.82652 0.450283 6.01765 0.464584Z" fill="#00A84F"/>
+</svg>
+						</span>
+						</div>
+						<div class="select__body">
+							<p class="select__body-item">Сначала популярные</p>
+							<p class="select__body-item">Сначала дешевле</p>
+							<p class="select__body-item">Сначала дороже</p>
+							<p class="select__body-item">Сначала с высоким рейтингом</p>
+							<p class="select__body-item">Сначала с высокой скидкой</p>
+						</div>
+					</div>
+
+				</div>
+      </div>
+    </section>
+
+    <!-- Контентная часть сайта -->
+    <section class="content">
+      <div class="container">
+        <div class="content__wrapper">
+
+          <!-- Левое меню -->
+          <aside class="content__menu">
+            
+            <!-- Список товаров -->
+            <div class="content__menu-list-products menu-list-item">
+              <div class="menu-list__block">
+                  <div class="block__item">
+                    <p class="block__title">Кастрюли из нержавеющей стали <span>125</span></p>
+                    <ul class="block__list">
+                      <li class="block__list-item">Элемент 1</li>
+                      <li class="block__list-item">Элемент 2</li>
+                      <li class="block__list-item">Элемент 3</li>
+                      <li class="block__list-item">Элемент 4</li>
+                    </ul>
+                  </div>
+
+                  <div class="block__item">
+                    <p class="block__title">Наборы Кастрюль <span>13</span></p>
+                    <ul class="block__list">
+                      <li class="block__list-item">Элемент 1</li>
+                      <li class="block__list-item">Элемент 2</li>
+                      <li class="block__list-item">Элемент 3</li>
+                      <li class="block__list-item">Элемент 4</li>
+                    </ul>
+                  </div>
+
+                  <div class="block__item">
+                    <p class="block__title">Кастрюли эмалированые <span>82</span></p>
+                    <ul class="block__list">
+                      <li class="block__list-item">Элемент 1</li>
+                      <li class="block__list-item">Элемент 2</li>
+                      <li class="block__list-item">Элемент 3</li>
+                      <li class="block__list-item">Элемент 4</li>
+                    </ul>
+                  </div>
+
+                  <div class="block__item">
+                    <p class="block__title">
+                      Кастрюли из литого алюминия с а/п покрытием <span>15</span>
+                    </p>
+                    <ul class="block__list">
+                      <li class="block__list-item">
+                        Кастрюля Nadoba Mineralica 2,4 л 20 см с а/п
+                      </li>
+                      <li class="block__list-item">
+                        Кастрюля Nadoba Mineralica 4,3 л 24 см с антипригарным покрытием
+                      </li>
+                      <li class="block__list-item">Кастрюля-казан НМП 3 л крышка сковородка</li>
+                      <li class="block__list-item">Кастрюля-казан НМП 5 л крышка сковородка</li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+
+            <!-- Меню выбора магазинов -->
+            <div class="content__menu-list-stores menu-list-item">
+              <p class="menu-list-stores__title">
+                Наличие в магазинах
+              </p>
+              <!-- Селект с поиском -->
+              <div class="list-store__block ">
+                <p class="list-store__block-title">В любом из 23 магазинов</p>
+                <div class="list-store__block-element">
+                  <div class="block-element__item-search">
+                    <input type="text" name="serch-input" id="serch-input" placeholder="Название или адрес">
+                    <label for="serch-input" class="serach-icon"></label>
+                  </div>
+                  <ul>
+                    <li class="block-element__item">
+                      <input type="checkbox" name="111" id="111">
+                      <label for="111">&laquoКИТ&raquo ТЦ</label>
+                    </li>
+                    <li class="block-element__item">
+                      <input type="checkbox" name="222" id="222">
+                      <label for="222">&laquoНа крупской&raquo</label>
+                    </li>
+                    <li class="block-element__item">
+                      <input type="checkbox" name="333" id="333">
+                      <label for="333">&laquoНа мира&raquo</label>
+                    </li>
+                    <li class="block-element__item">
+                      <input type="checkbox" name="555" id="555">
+                      <label for="555">&laquoТД Виктор&raquo</label>
+                    </li>
+                    <li class="block-element__item">
+                      <input type="checkbox" name="666" id="666">
+                      <label for="666">&laquoКолизей&laquo ТЦ</label>
+                    </li>
+                    <li class="block-element__item">
+                      <input type="checkbox" name="777" id="777">
+                      <label for="777">&laquoШоколад&raquo ТЦ</label>
+                    </li>
+                    <li class="block-element__item">
+                      <input type="checkbox" name="888" id="888">
+                      <label for="888">&laquoЦУМ на 1905 год&raquo</label>
+                    </li>
+                    <li class="block-element__item">
+                      <input type="checkbox" name="999" id="999">
+                      <label for="999">&laquoЦУМ&raquo</label>
+                    </li>
+                    <li class="block-element__item">
+                      <input type="checkbox" name="122" id="122">
+                      <label for="122">&laquoУнивермаг&raquo</label>
+                    </li>
+                    <li class="block-element__item">
+                      <input type="checkbox" name="133" id="133">
+                      <label for="133">&laquoМагазин&raquo</label>
+                    </li>
+                    <li class="block-element__item">
+                      <input type="checkbox" name="144" id="144">
+                      <label for="144">&laquoМагазин&raquo</label>
+                    </li>
+                    <li class="block-element__item">
+                      <input type="checkbox" name="155" id="155">
+                      <label for="155">&laquoМагазин&raquo</label>
+                    </li>
+                    <li class="block-element__item">
+                      <input type="checkbox" name="166" id="166">
+                      <label for="166">&laquoМагазин&raquo</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <!-- Группа радио кнопок -->
+              <div class="menu-list-stores__radio-buttons">
+                <div class="radio-button__presense radio-item">
+                  <input type="radio" id="presense" name="radio">
+                  <label for="presense">В наличие</label>
+                </div>
+                <div class="radio-button__presense-order radio-item">
+                  <input type="radio" id="presense-order" name="radio">
+                  <label for="presense-order">В наличие и под заказ</label>
+                </div>
+                <div class="radio-button__all-products radio-item">
+                  <input type="radio" id="all-products" name="radio">
+                  <label for="all-products">Все товары, включая отсутствующие в продаже</label>
+                </div>
+              </div>
+            </div>
+
+               <!-- Поиск по параметрам -->
+              <div class="content__menu-list-params menu-list-item">
+                <p class="menu-list__title">Поискам по параметрам</p>
+                <div class="menu-list__block">
+                  <div class="block__item block__item-brends">
+                    <p class="block__title">Бренды</p>
+                    <ul class="block__list">
+                      <li class="block__list-item">
+                        <input type="checkbox" name="brends-bellasonno" id="brends-bellasonno">
+                        <label for="brends-bellasonno">Bellasonno</label>
+                      </li>
+                      <li class="block__list-item">
+                        <input type="checkbox" name="brends-classic" id="brends-classic">
+                        <label for="brends-classic">Classic</label>
+                      </li>
+                      <li class="block__list-item">
+                        <input type="checkbox" name="brends-unison" id="brends-unison">
+                        <label for="brends-unison">Unison</label>
+                      </li>
+                      <li class="block__list-item">
+                        <input type="checkbox" name="brends-adel" id="brends-adel">
+                        <label for="brends-adel">Адель</label>
+                      </li>
+                      <li class="block__list-item">
+                        <input type="checkbox" name="brends-volshebnaya-noch" id="brends-volshebnaya-noch">
+                        <label for="brends-volshebnaya-noch">Волшебная ночь</label>
+                      </li>
+                      <li class="block__list-item">
+                        <input type="checkbox" name="brends-myagkiy-son" id="brends-myagkiy-son">
+                        <label for="brends-myagkiy-son">Мягкий сон</label>
+                      </li>
+                      <li>Еще</li>
+                    </ul>
+                  </div>
+
+                  <div class="block__item block__item-collection">
+                    <p class="block__title">Коллекция</p>
+                    <ul class="block__list">
+                      <li class="block__list-item">Элемент 1</li>
+                      <li class="block__list-item">Элемент 2</li>
+                      <li class="block__list-item">Элемент 3</li>
+                      <li class="block__list-item">Элемент 4</li>
+                    </ul>
+                  </div>
+
+                  <div class="block__item block__item-materials">
+                    <p class="block__title">Материалы</p>
+                    <ul class="block__list">
+                      <li class="block__list-item">Элемент 1</li>
+                      <li class="block__list-item">Элемент 2</li>
+                      <li class="block__list-item">Элемент 3</li>
+                      <li class="block__list-item">Элемент 4</li>
+                    </ul>
+                  </div>
+
+                  <div class="block__item block__item-colors">
+                    <p class="block__title">
+                      Цвет
+                    </p>
+                    <ul class="block__list">
+                      <li class="block__list-item">Элемент 1</li>
+                      <li class="block__list-item">Элемент 2</li>
+                      <li class="block__list-item">Элемент 3</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </aside>
+
+         <!-- Контентная часть со списком товаров -->
+          <main class="content__products">
+            <div class="content__products-inner">
+              <div class="content__card-wrapper">
+                <div class="product-card">
+
+              <div class="product-card__listing-image">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="product-card__image">
+                <img src="./images/ProductsImages/Product-1.png" alt="Фото товара">
+                <span class="icon-discount">-10%</span>
+                <span class="icon-cart"><span>500</span></span>
+              </div>
+
+              <div class="product-card__subtitle">
+                <span>Хит</span>
+                <span>Новинка</span>
+              </div>
+
+              <div class="product-card__price">
+                <p class="actuality-price">3 239 &#8381 <span class="old-price">1355 &#8381</span></p>
+                <span class="product-amount">10 / 40 шт.</span>
+              </div>
+
+              <p class="product-card__name-product">
+                Кастрюля из литого алюминия. Multico AVOCADO 3,75 л с антипригарным покрытием ...
+              </p> 
+              <div class="hidden-element"> 
+                <div class="product-card__product-rating">
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.90549 0L9.59706 5.18236L15.0711 5.18236L10.6425 8.38524L12.3341 13.5676L7.90549 10.3647L3.47692 13.5676L5.16849 8.38524L0.739912 5.18236L6.21393 5.18236L7.90549 0Z" fill="#C4C4C4"/>
+</svg>
+                  </span>
+                </div>
+                <button class="product-card__btn"></button>
+              </div>
+                </div>
+              </div>
+
+              <div class="content__card-wrapper">
+              <div class="product-card">
+
+              <div class="product-card__listing-image">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="product-card__image">
+                <img src="./images/ProductsImages/Product-2.png" alt="Фото товара">
+                <span class="icon-discount">-10%</span>
+                <span class="icon-cart"><span>500</span></span>
+              </div>
+
+              <div class="product-card__subtitle">
+                <span>Хит</span>
+                <span>Новинка</span>
+              </div>
+
+              <div class="product-card__price">
+                <p class="actuality-price">3 239 &#8381 <span class="old-price">1355 &#8381</span></p>
+                <span class="product-amount">10 / 40 шт.</span>
+              </div>
+
+              <p class="product-card__name-product">
+                Кастрюля из литого алюминия. Multico AVOCADO 3,75 л с антипригарным покрытием ...
+              </p> 
+              <div class="hidden-element"> 
+                <div class="product-card__product-rating">
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.90549 0L9.59706 5.18236L15.0711 5.18236L10.6425 8.38524L12.3341 13.5676L7.90549 10.3647L3.47692 13.5676L5.16849 8.38524L0.739912 5.18236L6.21393 5.18236L7.90549 0Z" fill="#C4C4C4"/>
+</svg>
+                  </span>
+                </div>
+                <button class="product-card__btn"></button>
+              </div>
+              </div>
+              </div>
+
+              <div class="content__card-wrapper">
+              <div class="product-card">
+
+              <div class="product-card__listing-image">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="product-card__image">
+                <img src="./images/ProductsImages/Product-3.png" alt="Фото товара">
+                <span class="icon-discount">-10%</span>
+                <span class="icon-cart"><span>500</span></span>
+              </div>
+
+              <div class="product-card__subtitle">
+                <span>Хит</span>
+                <span>Новинка</span>
+              </div>
+
+              <div class="product-card__price">
+                <p class="actuality-price">3 239 &#8381 <span class="old-price">1355 &#8381</span></p>
+                <span class="product-amount">10 / 40 шт.</span>
+              </div>
+
+              <p class="product-card__name-product">
+                Кастрюля из литого алюминия. Multico AVOCADO 3,75 л с антипригарным покрытием ...
+              </p> 
+              <div class="hidden-element"> 
+                <div class="product-card__product-rating">
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.90549 0L9.59706 5.18236L15.0711 5.18236L10.6425 8.38524L12.3341 13.5676L7.90549 10.3647L3.47692 13.5676L5.16849 8.38524L0.739912 5.18236L6.21393 5.18236L7.90549 0Z" fill="#C4C4C4"/>
+</svg>
+                  </span>
+                </div>
+                <button class="product-card__btn"></button>
+              </div>
+              </div>
+              </div>
+
+              <div class="content__card-wrapper">
+              <div class="product-card">
+
+              <div class="product-card__listing-image">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="product-card__image">
+                <img src="./images/ProductsImages/Product-7.png" alt="Фото товара">
+                <span class="icon-discount">-10%</span>
+                <span class="icon-cart"><span>500</span></span>
+              </div>
+
+              <div class="product-card__subtitle">
+                <span>Хит</span>
+                <span>Новинка</span>
+              </div>
+
+              <div class="product-card__price">
+                <p class="actuality-price">3 239 &#8381 <span class="old-price">1355 &#8381</span></p>
+                <span class="product-amount">10 / 40 шт.</span>
+              </div>
+
+              <p class="product-card__name-product">
+                Кастрюля из литого алюминия. Multico AVOCADO 3,75 л с антипригарным покрытием ...
+              </p> 
+              <div class="hidden-element"> 
+                <div class="product-card__product-rating">
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.90549 0L9.59706 5.18236L15.0711 5.18236L10.6425 8.38524L12.3341 13.5676L7.90549 10.3647L3.47692 13.5676L5.16849 8.38524L0.739912 5.18236L6.21393 5.18236L7.90549 0Z" fill="#C4C4C4"/>
+</svg>
+                  </span>
+                </div>
+                <button class="product-card__btn"></button>
+              </div>
+              </div>
+              </div>
+
+              <div class="content__card-wrapper">
+              <div class="product-card">
+
+              <div class="product-card__listing-image">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="product-card__image">
+                <img src="./images/ProductsImages/Product-2.png" alt="Фото товара">
+                <span class="icon-discount">-10%</span>
+                <span class="icon-cart"><span>500</span></span>
+              </div>
+
+              <div class="product-card__subtitle">
+                <span>Хит</span>
+                <span>Новинка</span>
+              </div>
+
+              <div class="product-card__price">
+                <p class="actuality-price">3 239 &#8381 <span class="old-price">1355 &#8381</span></p>
+                <span class="product-amount">10 / 40 шт.</span>
+              </div>
+
+              <p class="product-card__name-product">
+                Кастрюля из литого алюминия. Multico AVOCADO 3,75 л с антипригарным покрытием ...
+              </p> 
+              <div class="hidden-element"> 
+                <div class="product-card__product-rating">
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.90549 0L9.59706 5.18236L15.0711 5.18236L10.6425 8.38524L12.3341 13.5676L7.90549 10.3647L3.47692 13.5676L5.16849 8.38524L0.739912 5.18236L6.21393 5.18236L7.90549 0Z" fill="#C4C4C4"/>
+</svg>
+                  </span>
+                </div>
+                <button class="product-card__btn"></button>
+              </div>
+              </div>
+              </div>
+
+              <div class="content__card-wrapper">
+              <div class="product-card">
+
+              <div class="product-card__listing-image">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="product-card__image">
+                <img src="./images/ProductsImages/Product-5.png" alt="Фото товара">
+                <span class="icon-discount">-10%</span>
+                <span class="icon-cart"><span>500</span></span>
+              </div>
+
+              <div class="product-card__subtitle">
+                <span>Хит</span>
+                <span>Новинка</span>
+              </div>
+
+              <div class="product-card__price">
+                <p class="actuality-price">3 239 &#8381 <span class="old-price">1355 &#8381</span></p>
+                <span class="product-amount">10 / 40 шт.</span>
+              </div>
+
+              <p class="product-card__name-product">
+                Кастрюля из литого алюминия. Multico AVOCADO 3,75 л с антипригарным покрытием ...
+              </p> 
+              <div class="hidden-element"> 
+                <div class="product-card__product-rating">
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.90549 0L9.59706 5.18236L15.0711 5.18236L10.6425 8.38524L12.3341 13.5676L7.90549 10.3647L3.47692 13.5676L5.16849 8.38524L0.739912 5.18236L6.21393 5.18236L7.90549 0Z" fill="#C4C4C4"/>
+</svg>
+                  </span>
+                </div>
+                <button class="product-card__btn"></button>
+              </div>
+              </div>
+              </div>
+
+              <div class="content__card-wrapper">
+              <div class="product-card">
+
+              <div class="product-card__listing-image">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="product-card__image">
+                <img src="./images/ProductsImages/Product-4.png" alt="Фото товара">
+                <span class="icon-discount">-10%</span>
+                <span class="icon-cart"><span>500</span></span>
+              </div>
+
+              <div class="product-card__subtitle">
+                <span>Хит</span>
+                <span>Новинка</span>
+              </div>
+
+              <div class="product-card__price">
+                <p class="actuality-price">3 239 &#8381 <span class="old-price">1355 &#8381</span></p>
+                <span class="product-amount">10 / 40 шт.</span>
+              </div>
+
+              <p class="product-card__name-product">
+                Кастрюля из литого алюминия. Multico AVOCADO 3,75 л с антипригарным покрытием ...
+              </p> 
+              <div class="hidden-element"> 
+                <div class="product-card__product-rating">
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.90549 0L9.59706 5.18236L15.0711 5.18236L10.6425 8.38524L12.3341 13.5676L7.90549 10.3647L3.47692 13.5676L5.16849 8.38524L0.739912 5.18236L6.21393 5.18236L7.90549 0Z" fill="#C4C4C4"/>
+</svg>
+                  </span>
+                </div>
+                <button class="product-card__btn"></button>
+              </div>
+              </div>
+              </div>
+
+              <div class="content__card-wrapper">
+              <div class="product-card">
+
+              <div class="product-card__listing-image">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="product-card__image">
+                <img src="./images/ProductsImages/Product-6.png" alt="Фото товара">
+                <span class="icon-discount">-10%</span>
+                <span class="icon-cart"><span>500</span></span>
+              </div>
+
+              <div class="product-card__subtitle">
+                <span>Хит</span>
+                <span>Новинка</span>
+              </div>
+
+              <div class="product-card__price">
+                <p class="actuality-price">3 239 &#8381 <span class="old-price">1355 &#8381</span></p>
+                <span class="product-amount">10 / 40 шт.</span>
+              </div>
+
+              <p class="product-card__name-product">
+                Кастрюля из литого алюминия. Multico AVOCADO 3,75 л с антипригарным покрытием ...
+              </p> 
+              <div class="hidden-element"> 
+                <div class="product-card__product-rating">
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.90549 0L9.59706 5.18236L15.0711 5.18236L10.6425 8.38524L12.3341 13.5676L7.90549 10.3647L3.47692 13.5676L5.16849 8.38524L0.739912 5.18236L6.21393 5.18236L7.90549 0Z" fill="#C4C4C4"/>
+</svg>
+                  </span>
+                </div>
+                <button class="product-card__btn"></button>
+              </div>
+              </div>
+              </div>
+
+              <div class="content__card-wrapper">
+              <div class="product-card">
+
+              <div class="product-card__listing-image">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="product-card__image">
+                <img src="./images/ProductsImages/Product-1.png" alt="Фото товара">
+                <span class="icon-discount">-10%</span>
+                <span class="icon-cart"><span>500</span></span>
+              </div>
+
+              <div class="product-card__subtitle">
+                <span>Хит</span>
+                <span>Новинка</span>
+              </div>
+
+              <div class="product-card__price">
+                <p class="actuality-price">3 239 &#8381 <span class="old-price">1355 &#8381</span></p>
+                <span class="product-amount">10 / 40 шт.</span>
+              </div>
+
+              <p class="product-card__name-product">
+                Кастрюля из литого алюминия. Multico AVOCADO 3,75 л с антипригарным покрытием ...
+              </p> 
+              <div class="hidden-element"> 
+                <div class="product-card__product-rating">
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.90549 0L9.59706 5.18236L15.0711 5.18236L10.6425 8.38524L12.3341 13.5676L7.90549 10.3647L3.47692 13.5676L5.16849 8.38524L0.739912 5.18236L6.21393 5.18236L7.90549 0Z" fill="#C4C4C4"/>
+</svg>
+                  </span>
+                </div>
+                <button class="product-card__btn"></button>
+              </div>
+              </div>
+              </div>
+
+              <div class="content__card-wrapper">
+              <div class="product-card">
+
+              <div class="product-card__listing-image">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="product-card__image">
+                <img src="./images/ProductsImages/Product-2.png" alt="Фото товара">
+                <span class="icon-discount">-10%</span>
+                <span class="icon-cart"><span>500</span></span>
+              </div>
+
+              <div class="product-card__subtitle">
+                <span>Хит</span>
+                <span>Новинка</span>
+              </div>
+
+              <div class="product-card__price">
+                <p class="actuality-price">3 239 &#8381 <span class="old-price">1355 &#8381</span></p>
+                <span class="product-amount">10 / 40 шт.</span>
+              </div>
+
+              <p class="product-card__name-product">
+                Кастрюля из литого алюминия. Multico AVOCADO 3,75 л с антипригарным покрытием ...
+              </p> 
+              <div class="hidden-element"> 
+                <div class="product-card__product-rating">
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.90549 0L9.59706 5.18236L15.0711 5.18236L10.6425 8.38524L12.3341 13.5676L7.90549 10.3647L3.47692 13.5676L5.16849 8.38524L0.739912 5.18236L6.21393 5.18236L7.90549 0Z" fill="#C4C4C4"/>
+</svg>
+                  </span>
+                </div>
+                <button class="product-card__btn"></button>
+              </div>
+              </div>
+              </div>
+
+              <div class="content__card-wrapper">
+              <div class="product-card">
+
+              <div class="product-card__listing-image">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="product-card__image">
+                <img src="./images/ProductsImages/Product-3.png" alt="Фото товара">
+                <span class="icon-discount">-10%</span>
+                <span class="icon-cart"><span>500</span></span>
+              </div>
+
+              <div class="product-card__subtitle">
+                <span>Хит</span>
+                <span>Новинка</span>
+              </div>
+
+              <div class="product-card__price">
+                <p class="actuality-price">3 239 &#8381 <span class="old-price">1355 &#8381</span></p>
+                <span class="product-amount">10 / 40 шт.</span>
+              </div>
+
+              <p class="product-card__name-product">
+                Кастрюля из литого алюминия. Multico AVOCADO 3,75 л с антипригарным покрытием ...
+              </p> 
+              <div class="hidden-element"> 
+                <div class="product-card__product-rating">
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.90549 0L9.59706 5.18236L15.0711 5.18236L10.6425 8.38524L12.3341 13.5676L7.90549 10.3647L3.47692 13.5676L5.16849 8.38524L0.739912 5.18236L6.21393 5.18236L7.90549 0Z" fill="#C4C4C4"/>
+</svg>
+                  </span>
+                </div>
+                <button class="product-card__btn"></button>
+              </div>
+              </div>
+              </div>
+
+              <div class="content__card-wrapper">
+              <div class="product-card">
+
+              <div class="product-card__listing-image">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="product-card__image">
+                <img src="./images/ProductsImages/Product-6.png" alt="Фото товара">
+                <span class="icon-discount">-10%</span>
+                <span class="icon-cart"><span>500</span></span>
+              </div>
+
+              <div class="product-card__subtitle">
+                <span>Хит</span>
+                <span>Новинка</span>
+              </div>
+
+              <div class="product-card__price">
+                <p class="actuality-price">3 239 &#8381 <span class="old-price">1355 &#8381</span></p>
+                <span class="product-amount">10 / 40 шт.</span>
+              </div>
+
+              <p class="product-card__name-product">
+                Кастрюля из литого алюминия. Multico AVOCADO 3,75 л с антипригарным покрытием ...
+              </p> 
+              <div class="hidden-element"> 
+                <div class="product-card__product-rating">
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.90549 0L9.59706 5.18236L15.0711 5.18236L10.6425 8.38524L12.3341 13.5676L7.90549 10.3647L3.47692 13.5676L5.16849 8.38524L0.739912 5.18236L6.21393 5.18236L7.90549 0Z" fill="#C4C4C4"/>
+</svg>
+                  </span>
+                </div>
+                <button class="product-card__btn"></button>
+              </div>
+              </div>
+              </div>
+
+              <div class="content__card-wrapper">
+              <div class="product-card">
+
+              <div class="product-card__listing-image">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="product-card__image">
+                <img src="./images/ProductsImages/Product-1.png" alt="Фото товара">
+                <span class="icon-discount">-10%</span>
+                <span class="icon-cart"><span>500</span></span>
+              </div>
+
+              <div class="product-card__subtitle">
+                <span>Хит</span>
+                <span>Новинка</span>
+              </div>
+
+              <div class="product-card__price">
+                <p class="actuality-price">3 239 &#8381 <span class="old-price">1355 &#8381</span></p>
+                <span class="product-amount">10 / 40 шт.</span>
+              </div>
+
+              <p class="product-card__name-product">
+                Кастрюля из литого алюминия. Multico AVOCADO 3,75 л с антипригарным покрытием ...
+              </p> 
+              <div class="hidden-element"> 
+                <div class="product-card__product-rating">
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                  <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.87632 0L9.56789 5.18236L15.0419 5.18236L10.6133 8.38524L12.3049 13.5676L7.87632 10.3647L3.44775 13.5676L5.13931 8.38524L0.710737 5.18236L6.18476 5.18236L7.87632 0Z" fill="#FF9A00"/>
+                  </svg>
+                  </span>
+                   <span class="product-stars">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.90549 0L9.59706 5.18236L15.0711 5.18236L10.6425 8.38524L12.3341 13.5676L7.90549 10.3647L3.47692 13.5676L5.16849 8.38524L0.739912 5.18236L6.21393 5.18236L7.90549 0Z" fill="#C4C4C4"/>
+</svg>
+                  </span>
+                </div>
+                <button class="product-card__btn"></button>
+              </div>
+              </div>
+              </div>
+            </div>
+
+
+            <div class="content__product-more">
+              <p class="product-pages">12 товаров из 54</p>
+              <span class="pages-range"></span>
+              <button class="link-pages">Показать еще</button>
+            </div>
+
+          </main>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

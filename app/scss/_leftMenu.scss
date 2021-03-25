@@ -1,0 +1,87 @@
+.content {
+    &__menu-list-stores{
+        background-color: #fff;
+        padding: 35px 30px 10px 30px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0,  0.07);
+        border-radius: 16px;
+    }
+    &__menu-list-products {
+        background-color: #fff;
+        padding: 35px 30px 10px 30px;
+        margin-bottom: 30px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
+        border-radius: 16px;
+
+        .menu-list__block {
+            width: 287px;
+            .block__item {
+                margin-bottom: 30px;
+                .block__title {
+                    position: relative;
+                    font-size: 16px;
+                    line-height: 18px;
+
+                    &:hover {
+                        color: #00A84F;
+                        cursor: pointer;
+                        transition: color .2s ease-in;
+                    }
+                    &:hover::before{
+                        filter: none;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background-image: url('../images/select-arrow.svg');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        filter: grayscale(1);
+                        transform: rotate(180deg);
+                        transition: all .2s ease-in;
+                        width: 14px;
+                        height: 14px;
+                        top: 3px;
+                        right: -12px;
+                    }
+
+                    span {
+                        color: #00A84F;
+                    }
+                }
+
+                .block__list {
+                    display: none;
+                    visibility: hidden;
+                    transition: visibility .3s ease-in;
+
+                    &-item {
+                        max-width: 246px;
+                        padding-left: 20px;
+                        margin-top: 16px;
+                        line-height: 20px;
+                        &:hover{
+                            cursor: pointer;
+                            color: #00A84F;
+                        }
+                    }
+                }
+            }
+
+            .block__item.is-active {
+                .block__list {
+                    display: block;
+                    visibility: visible;
+                }
+
+                .block__title {
+                    &::before {
+                        content: '';
+                        transform: rotate(0deg);
+                        // right: -50px;
+                    }
+                }
+            }
+        }
+    }
+}
