@@ -54,7 +54,7 @@
                     display: none;
                     visibility: hidden;
                     transition: visibility .3s ease-in;
-
+                    animation: fadeListProducts .2s ease-in;
                     &-item {
                         max-width: 246px;
                         padding-left: 20px;
@@ -83,5 +83,73 @@
                 }
             }
         }
+    }
+}
+
+@-webkit-keyframes fadeListProducts {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeListProducts {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeListProducts {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeListProducts {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
     }
 }

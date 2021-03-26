@@ -129,6 +129,7 @@
 
         .hidden-element {
             display: none;
+            animation: fadeCardElement .2s ease-in;
             .product-card__product-rating {
                 margin-left: 20px;
                 margin-bottom: 20px;
@@ -180,5 +181,73 @@
         &:hover{
             background-color: #00a84e15;
         }
+    }
+}
+
+@-webkit-keyframes fadeCardElement {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeCardElement {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeCardElement {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeCardElement {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
     }
 }

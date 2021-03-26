@@ -49,8 +49,7 @@
                 }
                 .block__list {
                     display: none;
-                    visibility: hidden;
-                    transition: visibility .3s ease-in;
+                    animation: fadeListParams .2s ease-in;
                     li{
                         cursor: pointer;
                         &:last-child{
@@ -113,5 +112,73 @@
                 }
             }
         }
+    }
+}
+
+@-webkit-keyframes fadeListParams {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeListParams {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeListParams {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeListParams {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
     }
 }
